@@ -87,3 +87,27 @@ topContentHeaders[1].textContent = "About";
 let topContentText = document.querySelectorAll(".main-content .top-content .text-content p");
 topContentText[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 topContentText[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+let midImage = document.getElementById("middle-img");
+midImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let bottomContentHeaders = document.querySelectorAll(".main-content .bottom-content .text-content h4");
+bottomContentHeaders[0].textContent = "Services";
+bottomContentHeaders[1].textContent = "Product";
+bottomContentHeaders[2].textContent = "Vision";
+
+let bottomContentText = document.querySelectorAll(".main-content .bottom-content .text-content p");
+bottomContentText[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomContentText[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomContentText[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+let contactHeader = document.querySelector(".contact h4");
+contactHeader.textContent = "Contact";
+
+let contactContent = document.querySelectorAll(".contact p");
+contactContent[0].innerHTML = "123 Way 456 Street <br> Somewhere, USA";
+contactContent[1].textContent = "1 (888) 888-8888";
+contactContent[2].textContent = "sales@greatidea.io";
+
+let footer = document.querySelector("footer p");
+footer.textContent = "Copyright Great Idea! 2018";
