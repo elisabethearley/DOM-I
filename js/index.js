@@ -37,6 +37,36 @@ const siteContent = {
   },
 };
 
+let navText = document.querySelectorAll("a"); 
+navText[0].textContent = "Services";
+navText[1].textContent = "Product";
+navText[2].textContent = "Vision";
+navText[3].textContent = "Features";
+navText[4].textContent = "About";
+navText[5].textContent = "Contact";
+navText.forEach( (element) => {
+  element.style.color = "green";
+})
+
+let newNavText = document.createElement("a");
+newNavText.textContent = "Our Team";
+newNavText.style.cursor = "pointer";
+newNavText.style.color = "green";
+
+newNavText.classList.add("newNav");
+
+let newTextNav = document.createElement("a");
+newTextNav.textContent = "Welcome";
+newTextNav.style.cursor = "pointer";
+newTextNav.style.color = "green";
+
+newTextNav.classList.add("navNew");
+
+let newText = document.querySelector("nav");
+
+newText.prepend(newTextNav);
+newText.appendChild(newNavText);
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
