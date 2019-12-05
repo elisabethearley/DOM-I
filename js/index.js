@@ -70,3 +70,20 @@ newText.appendChild(newNavText);
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaText = document.querySelector("h1");
+ctaText.innerHTML = "DOM <br> is <br> Awesome";
+
+let ctaButton = document.querySelector(".cta-text button");
+ctaButton.textContent = "Get Started";
+
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let topContentHeaders = document.querySelectorAll(".main-content .top-content .text-content h4");
+topContentHeaders[0].textContent = "Features";
+topContentHeaders[1].textContent = "About";
+
+let topContentText = document.querySelectorAll(".main-content .top-content .text-content p");
+topContentText[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+topContentText[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
