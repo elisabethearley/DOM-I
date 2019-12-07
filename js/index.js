@@ -37,6 +37,10 @@ const siteContent = {
   },
 };
 
+let container = document.querySelector("body");
+container.style.background = "lightgrey";
+console.log(container);
+
 let navText = document.querySelectorAll("a"); 
 navText[0].textContent = "Services";
 navText[1].textContent = "Product";
@@ -63,7 +67,6 @@ newTextNav.style.color = "green";
 newTextNav.classList.add("navNew");
 
 let newText = document.querySelector("nav");
-
 newText.prepend(newTextNav);
 newText.appendChild(newNavText);
 
@@ -73,6 +76,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let ctaText = document.querySelector("h1");
 ctaText.innerHTML = "DOM <br> is <br> Awesome";
+ctaText.style.color = "blue";
 
 let ctaButton = document.querySelector(".cta-text button");
 ctaButton.textContent = "Get Started";
@@ -83,6 +87,10 @@ ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 let topContentHeaders = document.querySelectorAll(".main-content .top-content .text-content h4");
 topContentHeaders[0].textContent = "Features";
 topContentHeaders[1].textContent = "About";
+topContentHeaders.forEach( (element) => {
+  element.style.color = "red";
+})
+
 
 let topContentText = document.querySelectorAll(".main-content .top-content .text-content p");
 topContentText[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
@@ -95,6 +103,9 @@ let bottomContentHeaders = document.querySelectorAll(".main-content .bottom-cont
 bottomContentHeaders[0].textContent = "Services";
 bottomContentHeaders[1].textContent = "Product";
 bottomContentHeaders[2].textContent = "Vision";
+bottomContentHeaders.forEach( (element) => {
+  element.style.color = "red";
+})
 
 let bottomContentText = document.querySelectorAll(".main-content .bottom-content .text-content p");
 bottomContentText[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
